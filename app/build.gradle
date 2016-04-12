@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "cn.yayi365.yayi"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        manifestPlaceholders = [APP_CHANNEL_VALUE: "default_channel",
+                                IS_ENABLE_DEBUG  : "true",
+                                APP_VERSION_VALUE: versionName,
+                                BUGLY_APPID_VALUE: properties.getProperty("buglyAppID"),
+                                BAIDU_API_KEY    : properties.getProperty("baiduApiKey"),
+                                UMENG_APP_KEY    : properties.getProperty("umengAppKey")]
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'//, 'x86_64', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    afterEvaluate {
+        tasks.matching {
+            it.name.startsWith('dex')
+        }.each { dx ->
+            if (dx.additionalParameters == null) {
+                dx.additionalParameters = ['--set-max-idx-number=48000']
+            } else {
+                dx.additionalParameters += '--set-max-idx-number=48000'
+            }
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile project(':OneSDK')
+}

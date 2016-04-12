@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_margin_double">32dp</dimen>
+    <dimen name="fab_margin">8dp</dimen>
+    <dimen name="half_fab_margin">4dp</dimen>
+    <dimen name="header_height">48dp</dimen>
+    <dimen name="text_padding">12dp</dimen>
+    <dimen name="login_text_top_margin">30dp</dimen>
+    <dimen name="login_text_bottom_margin">24dp</dimen>
+    <dimen name="register_btn_top_margin">60dp</dimen>
+    <dimen name="set_password_text_top_margin">30dp</dimen>
+    <dimen name="set_password_btn_top_margin">80dp</dimen>
+
+    <dimen name="default_btn_height">48dp</dimen>
+    <dimen name="default_btn_text_size">18sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="avatar_size">64dp</dimen>
+
+
+    <!-- photo  2，4张显示 和其它显示大小 -->
+    <dimen name="photo_one_size">80dp</dimen>
+    <dimen name="photo_two_or_four_size">166dp</dimen>
+    <dimen name="photo_three_or_other_size">249dp</dimen>
+
+</resources>

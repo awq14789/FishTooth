@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">牙艺</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_test">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="unknown_error">未知错误</string>
+    <string name="cancel">取消</string>
+    <string name="please_enter_mobile">请输入手机号</string>
+    <string name="please_enter_password">请输入密码</string>
+    <string name="login">登 录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="sign_up">注册</string>
+    <string name="other_login_style">或使用以下方式直接点击登录</string>
+    <string name="please_enter_captcha">请输入验证码</string>
+    <string name="get_captcha">获取验证码</string>
+    <string name="agree_with_the_user_agreement">我同意《牙艺用户服务协议》</string>
+    <string name="next_step">下一步</string>
+    <string name="get_captcha_left_second"> %d s</string>
+    <string name="password_length_control">6&#8211;16位密码</string>
+    <string name="submit">提 交</string>
+    <string name="reset_password">密码重置</string>
+    <string name="new_password">新密码</string>
+    <string name="search_hospital_or_doctor">搜索医院、医生</string>
+    <string name="allocated_quantity">预约量%d</string>
+    <string name="doctor_allocated_count">预约量 %d</string>
+    <string name="doctor_ask_count">咨询量 %d</string>
+    <string name="current_location">当前位置:%s</string>
+    <string name="admissions_doctor">接诊人:%s</string>
+    <string name="patient">就诊人:%s</string>
+    <string name="price">￥%s</string>
+    <string name="user_name">用户:%s</string>
+    <string name="attending_physician">主治医生:%s</string>
+    <string name="consultation_room">诊间:%s</string>
+    <string name="treatment_time">时间:%s</string>
+    <string name="cost_price">合计:%s</string>
+    <string name="offer_price">优惠:%s</string>
+    <string name="total_price">实付:%s</string>
+    <string name="patient_list_count">已添加%1$d人，还可添加%2$d人</string>
+    <string name="disease_title">疾病自查</string>
+    <string name="disease_desc">疾病自查描述</string>
+    <string name="appointment_title">预约挂号</string>
+    <string name="appointment_desc">预约挂号描述</string>
+    <string name="ask_title">免费咨询</string>
+    <string name="ask_desc">免费咨询描述</string>
+    <string name="hospital_desc_title">医院详情</string>
+    <string name="hospital_desc_desc">医院详情描述</string>
+    <string name="t_mobile_not_require">请输入正确格式的手机号码</string>
+    <string name="t_getting_captcha">正在获取验证码，请稍候</string>
+    <string name="t_send_captcha_success">验证码发送成功</string>
+    <string name="t_send_captcha_failed">验证码获取失败，请重试</string>
+    <string name="t_check_captcha_failed">验证码错误，请重新输入</string>
+    <string name="t_mobile_error">手机号码输入有误</string>
+    <string name="t_mobile_or_captcha_error">手机号码或验证码输入有误</string>
+    <string name="t_password_not_require">密码格式错误</string>
+    <string name="t_user_register_success">用户注册成功</string>
+    <string name="t_login_mobile_or_password_error">手机号码或密码输入错误</string>
+    <string name="t_mobile_not_register">此手机号码未注册</string>
+    <string name="t_user_reset_password_success">密码重置成功，请重新登录</string>
+    <string name="t_user_login_success">登陆成功</string>
+    <string name="t_please_check_your_location">请选择您当前的地址</string>
+
+    <string name="unit_family_medical_record">的病历档案</string>
+
+    <string name="my_collection">我的收藏</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
